@@ -1,4 +1,17 @@
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+执行
+``` yaml
+cd openwrt && make menuconfig
+```
+选好要编译的插件，保存后不要退出ssh，执行
+``` yaml
+make defconfig
+```
+再执行
+``` yaml
+./scripts/diffconfig.sh
+```
+获取.config配置
 
 # Actions-OpenWrt
 
